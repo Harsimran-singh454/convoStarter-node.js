@@ -1,0 +1,7 @@
+extends layout 
+block layout-content 
+    h1(style="text-align:center;") Let's See What's Going on
+     each n in data
+        .newsCard
+            h2(class="newsHead") #{n.title}
+            p(class="newsContent") #{n.content}

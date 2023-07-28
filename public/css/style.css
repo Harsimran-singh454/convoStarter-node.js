@@ -1,0 +1,239 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    padding: 50px 0px;
+}
+
+header a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 20px #4f2872;    
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header a:hover{
+    color:red;
+}
+
+header p{
+    text-align: center;
+}
+
+main{
+ width: 100%;
+}
+
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.container a{
+    position: relative;
+    /* width: 100%; */
+    height: 250px;
+    border: none;
+    box-shadow: inset 0px -2px 1px 1px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-family: 600;
+    margin: 20px;
+    font-size: 30px;
+}
+
+
+/* -----------joke */
+.container a:nth-child(1){
+    background-color: rgb(15, 177, 15);
+}
+
+.container a:nth-child(1):hover{
+    background-color: rgb(52, 218, 52);
+}
+
+
+/* // --------- jokes menu */
+
+.MenuList{
+    gap: 20px;
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MenuList li{
+    background-color: rgb(18, 55, 239);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.MenuList li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+hr{
+    width: 60%;
+    margin: 50px auto;
+    background-color: gray;
+}
+
+
+/* ------------insult */
+.container a:nth-child(2){
+    background-color: rgb(199, 14, 14);
+}
+
+.container a:nth-child(2):hover{
+    background-color: rgb(225, 68, 68);
+}
+
+
+
+/* --------------- qoute */
+.container a:nth-child(3){
+    background-color: rgb(22, 184, 213);
+}
+
+.container a:nth-child(3):hover{
+    background-color: rgb(112, 215, 233);
+}
+
+
+
+
+/* ---------------- news */
+.container a:nth-child(4){
+    background-color: rgb(85, 8, 167);
+}
+.container a:nth-child(4):hover{
+    background-color: rgb(134, 54, 221);
+}
+
+
+
+
+
+.wrapper{
+    text-align: center;
+    width: 70%;
+    margin: 1em auto;
+    background-color: rgb(15, 177, 15);
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+
+
+
+.newsCard{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid rgba(132, 132, 132, 0.679);
+    padding: 0px;
+}
+
+.newsCard h2{
+    background-color: rgb(0, 195, 254);
+    margin: 0px;
+    padding: 10px;
+}
+
+.newsCard p{
+    margin: 0px;
+    padding: 10px;
+
+    font-size: 20px;
+    font-weight: 200;
+    background-color: rgba(167, 233, 255, 0.659);
+}
+
+
+
+footer{
+    /* position: fixed;
+    bottom: 0px; */
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container{
+        grid-template-columns: 1fr;
+    }  
+
+    .container a{
+        height: 100px;
+    };
+}
+
+
+
+#qoute, .auth{
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+}
+.auth{
+    text-align: right;
+    font-weight: 200;
+    color: white;
+}
+.qoutehr{
+    width:50%; 
+    margin:10px auto;
+}
+
+.backbtn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}

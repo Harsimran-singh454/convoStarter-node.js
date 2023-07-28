@@ -1,0 +1,28 @@
+extends layout 
+block layout-content 
+
+    .wrapper 
+        h1 Bit of a Giggle For You
+        
+        if data.joke
+            p 
+                strong Joke  
+                span #{data.joke}
+
+        if data.setup
+
+            p 
+                strong q: 
+                span #{data.setup}
+            
+            p 
+                strong a: 
+                span #{data.delivery}
+
+    hr
+        
+    ul.MenuList
+        li 
+            a(href="/progJoke") Programming
+        li 
+            a(href="/darkJoke") Dark 

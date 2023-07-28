@@ -1,0 +1,17 @@
+extends layout 
+block layout-content 
+
+    .wrapper(style="background-color:rgb(22, 184, 213);")
+        
+        if !list
+            h1 Here's a Random One
+            p #{data} 
+        
+        
+        if list == true
+            h1 Here's a bunch 
+                each val in data
+                    p#qoute #{val.q}
+                    p.auth - #{val.a}     
+                    hr.qoutehr
+    a(href="/qoute" class="backbtn") <-- Go Back 

@@ -1,0 +1,14 @@
+extends layout 
+block layout-content 
+
+    .wrapper(style="background-color:rgb(22, 184, 213);")
+        h1 Quote of The Day
+        p #{data}
+
+    hr
+    
+    ul.MenuList
+        li 
+            a(href="/random") Read Random Quotes
+        li 
+            a(href="/qouteList") List of 50 Quotes

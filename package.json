@@ -1,0 +1,19 @@
+{
+  "name": "july28-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsdom": "^22.1.0",
+    "mongodb": "^5.7.0",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2"
+  }
+}
